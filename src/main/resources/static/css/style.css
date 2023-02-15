@@ -1,0 +1,103 @@
+#messageToSend {
+    width: 600px;
+    height: 180px;
+
+    background-color: rgba(54, 25, 25, .05);
+    border-radius: 15px;
+    border-color: white;
+}
+
+#user {
+    width: 600px;
+    height: 40px;
+
+    background-color: rgba(54, 25, 25, .05);
+    border-radius: 15px;
+    border-color: white;
+}
+
+#inputMessage {
+    display: inline;
+
+    width: 200px;
+    height: 40px;
+
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 500px;
+    font-size: 36px;
+    line-height: 43px;
+
+    color: #363620;
+}
+
+#send {
+    width: 210px;
+    height: 40px;
+
+    background: #000800;
+    color: white;
+    border-radius: 15px;
+}
+
+#response {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 500px;
+    font-size: 36px;
+    line-height: 43px;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas: ".  . grid_element--1 .  ."
+    ". grid_element--2 grid_element--3 . ."
+    ". . grid_element--4 grid_element--5 ."
+    ". . grid_element--6 . .";
+
+    row-gap: 30px;
+}
+
+.grid_element--1 {
+    grid-area: grid_element--1;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.grid_element--2 {
+    grid-area: grid_element--2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.grid_element--3 {
+    display: flex;
+    justify-content: flex-end;
+    grid-area: grid_element--3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.grid_element--4 {
+    display: flex;
+    justify-content: flex-end;
+    grid-area: grid_element--4;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.grid_element--5 {
+    display: flex;
+    align-items: flex-end;
+    grid-area: grid_element--5;
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+.grid_element--6 {
+    display: flex;
+    align-items: center;
+    grid-area: grid_element--6;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
