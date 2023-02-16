@@ -26,7 +26,7 @@ function sendMessage() {
 var messageToSend = document.getElementById('messageToSend').value;
 var user = document.getElementById('user').value;
 
-client.send("/app/chat"), {}, JSON.stringify({'message': messageToSend, 'user': user});
+client.send("/app/chat", {}, JSON.stringify({'message': messageToSend, 'user': user}));
 document.setElementById('messageToSend').value = "";
 
 }
