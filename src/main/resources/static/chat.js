@@ -1,7 +1,7 @@
 var client = null;
 
 function connect() {
-    client = Stomp.client("ws://chat-app-kamillooto.herokuapp.com/chat")
+    client = Stomp.client("wss://chat-app-kamillooto.herokuapp.com/chat")
 
     client.connect({}, function (frame) {
     client.subscribe("/topic/chat", function (message) {
